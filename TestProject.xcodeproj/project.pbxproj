@@ -19,6 +19,11 @@
 		D624FA5E231FFF2F00BECB7D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624FA5D231FFF2F00BECB7D /* MapViewController.swift */; };
 		D624FA60231FFF5200BECB7D /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624FA5F231FFF5200BECB7D /* MapViewModel.swift */; };
 		D624FA6723228CF600BECB7D /* SearchPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624FA6623228CF600BECB7D /* SearchPlaceViewController.swift */; };
+		D64158F123282421005977EE /* SearchPlaceServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64158F023282421005977EE /* SearchPlaceServiceProtocol.swift */; };
+		D64158F32328285E005977EE /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64158F22328285E005977EE /* RequestProtocol.swift */; };
+		D64158F523282892005977EE /* MapViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64158F423282892005977EE /* MapViewModelProtocol.swift */; };
+		D64158F7232828B9005977EE /* PlaceSelectionViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64158F6232828B9005977EE /* PlaceSelectionViewModelProtocol.swift */; };
+		D64158F9232828E0005977EE /* SearchPlaceViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64158F8232828E0005977EE /* SearchPlaceViewModelProtocol.swift */; };
 		D64E66512325AA3B001132AF /* PlaceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64E66502325AA3B001132AF /* PlaceContainer.swift */; };
 		D64E66532325AD88001132AF /* SearchPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64E66522325AD88001132AF /* SearchPlaceViewModel.swift */; };
 		D663C41823269D3B004C3821 /* SearchPlaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D663C41723269D3B004C3821 /* SearchPlaceService.swift */; };
@@ -31,6 +36,7 @@
 		D6947E9C2327029C002B057F /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6947E9B2327029C002B057F /* Path.swift */; };
 		D6947E9F2327086D002B057F /* UIViewController+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6947E9E2327086D002B057F /* UIViewController+SafeArea.swift */; };
 		D6947EA123277B8E002B057F /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6947EA023277B8E002B057F /* MapCoordinator.swift */; };
+		D6947EAB2327E6E1002B057F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6947EAA2327E6E1002B057F /* Location.swift */; };
 		F5640FC4D4F21A109BF49111 /* Pods_TestProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE52A51C0B6CE2A61EA6B8B /* Pods_TestProjectUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +93,11 @@
 		D624FA5D231FFF2F00BECB7D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		D624FA5F231FFF5200BECB7D /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		D624FA6623228CF600BECB7D /* SearchPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceViewController.swift; sourceTree = "<group>"; };
+		D64158F023282421005977EE /* SearchPlaceServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceServiceProtocol.swift; sourceTree = "<group>"; };
+		D64158F22328285E005977EE /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		D64158F423282892005977EE /* MapViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModelProtocol.swift; sourceTree = "<group>"; };
+		D64158F6232828B9005977EE /* PlaceSelectionViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSelectionViewModelProtocol.swift; sourceTree = "<group>"; };
+		D64158F8232828E0005977EE /* SearchPlaceViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceViewModelProtocol.swift; sourceTree = "<group>"; };
 		D64E66502325AA3B001132AF /* PlaceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceContainer.swift; sourceTree = "<group>"; };
 		D64E66522325AD88001132AF /* SearchPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceViewModel.swift; sourceTree = "<group>"; };
 		D663C41723269D3B004C3821 /* SearchPlaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceService.swift; sourceTree = "<group>"; };
@@ -99,6 +110,7 @@
 		D6947E9B2327029C002B057F /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		D6947E9E2327086D002B057F /* UIViewController+SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+SafeArea.swift"; sourceTree = "<group>"; };
 		D6947EA023277B8E002B057F /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
+		D6947EAA2327E6E1002B057F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		D6BE1E716EBBA773C2594956 /* Pods_TestProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD53803A178FEEC59D125D4B /* Pods-TestProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProjectTests.release.xcconfig"; path = "Target Support Files/Pods-TestProjectTests/Pods-TestProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE1A80667D4AC5B412687EA3 /* Pods-TestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.release.xcconfig"; path = "Target Support Files/Pods-TestProject/Pods-TestProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -180,7 +192,6 @@
 		D624FA23231FF78D00BECB7D /* TestProject */ = {
 			isa = PBXGroup;
 			children = (
-				D6947EA723279E3A002B057F /* Services */,
 				D624FA52231FF7E700BECB7D /* AppDelegate */,
 				D6947E9D23270844002B057F /* Extensions */,
 				D64E664E2325AA02001132AF /* Models */,
@@ -188,6 +199,7 @@
 				D663C41923269DE6004C3821 /* Protocols */,
 				D624FA53231FF80C00BECB7D /* Resources */,
 				D6947EA323279D75002B057F /* Screens */,
+				D6947EA723279E3A002B057F /* Services */,
 			);
 			path = TestProject;
 			sourceTree = "<group>";
@@ -235,6 +247,7 @@
 				D624FA56231FFE7300BECB7D /* PlaceSelectionViewController.swift */,
 				D624FA58231FFE9400BECB7D /* PlaceSelectionViewModel.swift */,
 				D663C41E23269E76004C3821 /* PlaceSelectionCoordinator.swift */,
+				D64158F6232828B9005977EE /* PlaceSelectionViewModelProtocol.swift */,
 			);
 			path = PlaceSelection;
 			sourceTree = "<group>";
@@ -245,6 +258,7 @@
 				D624FA5D231FFF2F00BECB7D /* MapViewController.swift */,
 				D624FA5F231FFF5200BECB7D /* MapViewModel.swift */,
 				D6947EA023277B8E002B057F /* MapCoordinator.swift */,
+				D64158F423282892005977EE /* MapViewModelProtocol.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -255,6 +269,7 @@
 				D624FA6623228CF600BECB7D /* SearchPlaceViewController.swift */,
 				D64E66522325AD88001132AF /* SearchPlaceViewModel.swift */,
 				D6947E952326EEA1002B057F /* SearchPlaceCoordinator.swift */,
+				D64158F8232828E0005977EE /* SearchPlaceViewModelProtocol.swift */,
 			);
 			path = SearchPlace;
 			sourceTree = "<group>";
@@ -262,6 +277,7 @@
 		D64E664E2325AA02001132AF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D6947EA92327E6D1002B057F /* Location */,
 				D64E664F2325AA0A001132AF /* Place */,
 			);
 			path = Models;
@@ -330,6 +346,7 @@
 		D6947EA623279DB2002B057F /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				D64158F22328285E005977EE /* RequestProtocol.swift */,
 				D6947E9923270047002B057F /* Request.swift */,
 			);
 			path = Request;
@@ -346,9 +363,18 @@
 		D6947EA823279E49002B057F /* SearchCityService */ = {
 			isa = PBXGroup;
 			children = (
+				D64158F023282421005977EE /* SearchPlaceServiceProtocol.swift */,
 				D663C41723269D3B004C3821 /* SearchPlaceService.swift */,
 			);
 			path = SearchCityService;
+			sourceTree = "<group>";
+		};
+		D6947EA92327E6D1002B057F /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				D6947EAA2327E6E1002B057F /* Location.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -578,6 +604,9 @@
 				D624FA59231FFE9400BECB7D /* PlaceSelectionViewModel.swift in Sources */,
 				D64E66532325AD88001132AF /* SearchPlaceViewModel.swift in Sources */,
 				D663C41F23269E76004C3821 /* PlaceSelectionCoordinator.swift in Sources */,
+				D64158F9232828E0005977EE /* SearchPlaceViewModelProtocol.swift in Sources */,
+				D64158F32328285E005977EE /* RequestProtocol.swift in Sources */,
+				D64158F123282421005977EE /* SearchPlaceServiceProtocol.swift in Sources */,
 				D624FA57231FFE7300BECB7D /* PlaceSelectionViewController.swift in Sources */,
 				D64E66512325AA3B001132AF /* PlaceContainer.swift in Sources */,
 				D6947EA123277B8E002B057F /* MapCoordinator.swift in Sources */,
@@ -585,9 +614,12 @@
 				D6947E962326EEA1002B057F /* SearchPlaceCoordinator.swift in Sources */,
 				D624FA5E231FFF2F00BECB7D /* MapViewController.swift in Sources */,
 				D663C41823269D3B004C3821 /* SearchPlaceService.swift in Sources */,
+				D64158F7232828B9005977EE /* PlaceSelectionViewModelProtocol.swift in Sources */,
 				D6947E9F2327086D002B057F /* UIViewController+SafeArea.swift in Sources */,
+				D6947EAB2327E6E1002B057F /* Location.swift in Sources */,
 				D6947E982326EFFE002B057F /* Place.swift in Sources */,
 				D624FA6723228CF600BECB7D /* SearchPlaceViewController.swift in Sources */,
+				D64158F523282892005977EE /* MapViewModelProtocol.swift in Sources */,
 				D663C41B23269DF1004C3821 /* BaseCoordinator.swift in Sources */,
 				D624FA60231FFF5200BECB7D /* MapViewModel.swift in Sources */,
 			);

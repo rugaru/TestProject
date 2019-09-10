@@ -27,8 +27,7 @@ class BaseCoordinator<ResultType> {
     
     func coordinate<T>(to coordinator: BaseCoordinator<T>) -> Observable<T> {
         store(coordinator: coordinator)
-        return coordinator.start()
-           // .do(onNext: { [weak self] _ in self?.free(coordinator: coordinator) })
+        return coordinator.start().do(onNext: { [weak self] _ in self?.free(coordinator: coordinator) })
     }
     
     func start() -> Observable<ResultType> {

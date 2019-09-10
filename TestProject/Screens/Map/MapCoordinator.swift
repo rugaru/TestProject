@@ -15,6 +15,7 @@ class MapCoordinator: BaseCoordinator<Void> {
     private let navigationController: UINavigationController
     private let container: Container
     private let places: [Place]
+    
     init(navigationController: UINavigationController, container: Container, places: [Place]) {
         self.navigationController = navigationController
         self.container = container

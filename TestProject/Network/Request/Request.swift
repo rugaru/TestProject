@@ -11,10 +11,6 @@ import Alamofire
 import RxAlamofire
 import CodableAlamofire
 
-protocol RequestProtocol {
-    func makeRxGetRequest<T: Codable>(path: Path, parameters: [String: Any]?) -> Single<T>
-}
-
 class Request {
     
     private func makeRxRequest<T: Decodable>(method: HTTPMethod, path: Path, parameters: [String: Any]?) -> Single<T> {

@@ -31,25 +31,21 @@ class PlaceSelectionViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         
-//        let fromTextFieldValidation = fromTextField
-//            .rx_text
-//            .map({!$0.isEmpty})
-//            .shareReplay(1)
-//        
-//        let toTextFieldValidation = toTextField
-//            .rx_text
-//            .map({!$0.isEmpty})
-//            .shareReplay(1)
-//        
-//        let enableButton = combineLatest(loginValidation, userNameValidation) { (login, name) in
-//            return login && name
-//        }
-//        
-//        enableButton
-//            .bindTo(loginButton.rx_enabled)
-//            .addDisposableTo(disposeBag)
-        
-        openMapButton.rx.isEnabled
+        let fromTextFieldValidation = viewModel.fromCitySubject
+            .map { $0 != nil }
+            .share(replay: 1)
+
+        let toTextFieldValidation = viewModel.toCitySubject
+            .map { $0 != nil }
+            .share(replay: 1)
+
+        let enableButton = Observable.combineLatest(fromTextFieldValidation, toTextFieldValidation) { (from, to) in
+            return from && to
+        }
+
+        enableButton
+            .bind(to: openMapButton.rx.isEnabled)
+            .disposed(by: disposeBag)
         
         openMapButton.rx.tap
             .bind(to: viewModel.searchCityObserver)

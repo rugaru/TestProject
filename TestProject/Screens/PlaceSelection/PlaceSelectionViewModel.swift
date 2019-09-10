@@ -8,19 +8,6 @@
 
 import RxSwift
 
-protocol PlaceSelectionViewModelProtocol {
-    var fromCity: Observable<Void> { get }
-    var fromCityObserver: AnyObserver<Void> { get }
-    var fromCitySubject: BehaviorSubject<Place?> { get }
-    
-    var toCity: Observable<Void> { get }
-    var toCityObserver: AnyObserver<Void> { get }
-    var toCitySubject: BehaviorSubject<Place?> { get }
-    
-    var searchCityObserver: AnyObserver<Void> { get }
-    var searchCity: Observable<Void> { get }
-}
-
 class PlaceSelectionViewModel: PlaceSelectionViewModelProtocol {
     var fromCityObserver: AnyObserver<Void>
     var fromCity: Observable<Void>

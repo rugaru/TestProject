@@ -39,7 +39,7 @@ class SearchPlaceViewController: UIViewController {
         viewModel.places
             .observeOn(MainScheduler.instance)
             .bind(to: tableView.rx.items(cellIdentifier: "Cell", cellType: UITableViewCell.self)) { (_, city, cell) in
-                cell.textLabel?.text = city.name
+                cell.textLabel?.text = "\(city.country) \(city.name)"
                 cell.selectionStyle = .none
             }
             .disposed(by: disposeBag)

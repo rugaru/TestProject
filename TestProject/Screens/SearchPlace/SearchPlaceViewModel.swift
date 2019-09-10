@@ -8,13 +8,6 @@
 
 import RxSwift
 
-protocol SearchPlaceViewModelProtocol {
-    var places: Observable<[Place]> { get }
-    var selectedCity: PublishSubject<Place> { get }
-    
-    func searchPlace(text: String)
-}
-
 class SearchPlaceViewModel: SearchPlaceViewModelProtocol {
     private let disposeBag = DisposeBag()
     
